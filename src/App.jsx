@@ -48,6 +48,7 @@ function App() {
           <label>
             Ciudad:
             <select value={ciudad} onChange={(e) => setCiudad(e.target.value)}>
+              <option value="">-- Seleccione --</option>
               <option value="Barranquilla">Barranquilla</option>
               <option value="Cali">Cali</option>
               <option value="Cartagena">Cartagena</option>
@@ -85,6 +86,7 @@ function App() {
               value={tipoHabitacion}
               onChange={(e) => setTipoHabitacion(e.target.value)}
             >
+              <option value="">-- Seleccione --</option>
               <option value="estándar">Estándar</option>
               <option value="premium">Premium</option>
               <option value="VIP">VIP</option>
